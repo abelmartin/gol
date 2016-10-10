@@ -18,7 +18,7 @@ class Game
         if board[rindex][cindex] == 1
           new_board[rindex][cindex] = (livers == 2 || livers == 3) ? 1:0
         else
-          new_board[rindex][cindex] = 0
+          new_board[rindex][cindex] = livers == 3 ? 1:0
         end
       end
     end

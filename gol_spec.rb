@@ -87,4 +87,22 @@ describe Game do
       ])
     end
   end
+
+  describe 'fourth rule' do
+    it 'revives a dead cell with 3 neighbors alive' do
+      board = [
+        [0,0,1],
+        [0,0,1],
+        [0,0,1],
+      ]
+
+      game = Game.new(board)
+
+      expect(game.evolve).to eq([
+        [0,0,0],
+        [0,1,1],
+        [0,0,0]
+      ])
+    end
+  end
 end
