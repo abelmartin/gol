@@ -48,7 +48,7 @@ describe Game do
 
       expect(game.evolve).to eq([
         [0,0,0],
-        [0,0,1],
+        [0,1,1],
         [0,0,0]
       ])
     end
@@ -64,7 +64,7 @@ describe Game do
 
       expect(game.evolve).to eq([
         [1,1,1],
-        [0,1,0],
+        [1,1,1],
         [0,0,0]
       ])
     end
